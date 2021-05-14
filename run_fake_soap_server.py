@@ -2,6 +2,7 @@
 
 """Este script deve ser executado com Python 2.6+ e OpenSSL"""
 
+from __future__ import print_function
 import os, datetime
 
 CUR_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -39,7 +40,7 @@ class HandlerStatusServico(tornado.web.RequestHandler):
         tag = extrair_tag(raiz.getroot().getchildren()[0].getchildren()[0])
 
         # Chama o método respectivo para a tag
-        print 'Metodo:', tag
+        print('Metodo:', tag)
         getattr(self, tag)(raiz)
 
     def nfeStatusServicoNF2(self, raiz):
@@ -92,4 +93,3 @@ if __name__ == '__main__':
     http_server = tornado.httpserver.HTTPServer(application, ssl_options=ssl_options)
     http_server.listen(porta)
     tornado.ioloop.IOLoop.instance().start()
-
