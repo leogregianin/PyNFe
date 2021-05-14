@@ -16,6 +16,13 @@ try:
 except ImportError:
     raise Exception('Falhou ao importar flags')
 
+try:
+    basestring
+    unicode
+except NameError:
+    basestring = str
+    unicode = str
+
 
 # @memoize
 def so_numeros(texto):
