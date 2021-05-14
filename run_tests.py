@@ -23,8 +23,7 @@ if __name__ == '__main__':
 
     # Run the tests
     for fname in test_files:
-        print 'Running "%s"...'%(os.path.splitext(os.path.split(fname)[-1])[0])
+        print('Running "%s"...'%(os.path.splitext(os.path.split(fname)[-1])[0]))
         doctest.testfile(fname)
 
-    print 'Finished!'
-
+    print('Finished!')
