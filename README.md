@@ -85,12 +85,12 @@ print(xml.text)
   Mais exemplos no [Wiki](https://github.com/TadaSoftware/PyNFe/wiki)
 
 
-Testes
+Testes e Lint
 -----------
 
-```sh
-python -m unittest
-```
+ * Instalação: `pip3 install --user requirements-dev.txt`
+ * Rodar os testes: `pytest -v`
+ * Rodar o lint: `flake8 pynfe --count --select=E9,F63,F7,F82 --show-source --statistics`
 
 
 Documentação
