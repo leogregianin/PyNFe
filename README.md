@@ -82,7 +82,7 @@ xml = con.status_servico('nfe')
 print(xml.text)
 ```
 
-  Mais exemplos no [Wiki](https://github.com/TadaSoftware/PyNFe/wiki).
+  Mais exemplos no [Wiki](https://github.com/TadaSoftware/PyNFe/wiki)
 
 
 Testes e Lint
